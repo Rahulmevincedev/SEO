@@ -1,0 +1,207 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Setup Project Repository and Folder Structure",
+      "description": "Create the initial project repository with organized folders for each Shopify site and template types",
+      "status": "pending",
+      "dependencies": [],
+      "priority": "high",
+      "details": "1. Create a main project repository\n2. Set up top-level folders for each site (Cinders Barbecues, Kasai Grills, Cutler and Smyth, Bertha Oven, Sustaina Pouch, Fyreley)\n3. Within each site folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n4. Add README.md with project overview and structure explanation\n5. Set up version control (Git) with appropriate .gitignore file\n6. Create access documentation with URLs and credentials storage strategy",
+      "testStrategy": "Verify folder structure is consistent across all sites, ensure README is comprehensive, and confirm version control is properly initialized",
+      "subtasks": [
+        {
+          "id": 1,
+          "title": "Initialize Main Project Repository and Structure",
+          "description": "Create the main project repository with top-level organization and documentation",
+          "dependencies": [],
+          "details": "1. Create a new Git repository for the project\n2. Initialize with README.md containing project overview, purpose, and structure explanation\n3. Create the top-level folders for each Shopify site (Cinders Barbecues, Kasai Grills, Cutler and Smyth, Bertha Oven, Sustaina Pouch, Fyreley)\n4. Set up .gitignore file with appropriate exclusions for Shopify development (node_modules, .env files, etc.)\n5. Create a credentials.md template file (but don't add actual credentials) with placeholders for storing access information securely\n6. Test the repository by making an initial commit and pushing to remote\n7. Verify repository structure and accessibility for team members",
+          "status": "pending",
+          "parentTaskId": 1
+        },
+        {
+          "id": 2,
+          "title": "Setup Cinders Barbecues and Kasai Grills Site Folders",
+          "description": "Configure the folder structure and access verification for the first two Shopify sites",
+          "dependencies": [
+            1
+          ],
+          "details": "1. Within the Cinders Barbecues folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n2. Add site-specific README.md with Cinders Barbecues URL (Preview: https://cinders-barbecues.myshopify.com/?_cd=1636698bb0a09c19c2d4c3c6dd644e0c838988c08e53fc9f8cd4aa26105de626&_uid=110079082824&preview_theme_id=), theme details, and access instructions\n3. Create SEO testing configuration files for Cinders Barbecues\n4. Verify access to Cinders Barbecues Shopify admin and theme editor using the preview URL\n5. Verify access to each template type (Homepage, Collection List, Collection, Product, Cart) for Cinders Barbecues\n6. Within the Kasai Grills folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n7. Add site-specific README.md with Kasai Grills URL (Live: https://kasaigrills.com/), theme details, and access instructions\n8. Create SEO testing configuration files for Kasai Grills\n9. Verify access to Kasai Grills Shopify admin and theme editor using the live URL\n10. Verify access to each template type (Homepage, Collection List, Collection, Product, Cart) for Kasai Grills\n11. Document specific URLs for both sites in the main credentials template\n12. Test access to both sites and update documentation with any site-specific requirements\n13. Commit changes with descriptive message",
+          "status": "pending",
+          "parentTaskId": 1
+        },
+        {
+          "id": 3,
+          "title": "Setup Cutler and Smyth and Bertha Oven Site Folders",
+          "description": "Configure the folder structure and access verification for the next two Shopify sites",
+          "dependencies": [
+            1
+          ],
+          "details": "1. Within the Cutler and Smyth folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n2. Add site-specific README.md with Cutler and Smyth URL (Live: https://cutlerandsmyth.com/), theme details, and access instructions\n3. Create SEO testing configuration files for Cutler and Smyth\n4. Verify access to Cutler and Smyth Shopify admin and theme editor using the live URL\n5. Within the Bertha Oven folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n6. Add site-specific README.md with Bertha Oven URL (Preview: https://berthaoven.myshopify.com/), theme details, and access instructions\n7. Create SEO testing configuration files for Bertha Oven\n8. Verify access to Bertha Oven Shopify admin and theme editor using the preview URL\n9. Document specific URLs for both sites in the main credentials template\n10. Test access to both sites and update documentation with any site-specific requirements\n11. Commit changes with descriptive message",
+          "status": "pending",
+          "parentTaskId": 1
+        },
+        {
+          "id": 4,
+          "title": "Setup Sustaina Pouch and Fyreley Site Folders",
+          "description": "Configure the folder structure and access verification for the final two Shopify sites",
+          "dependencies": [
+            1
+          ],
+          "details": "1. Within the Sustaina Pouch folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n2. Add site-specific README.md with Sustaina Pouch URL (Preview: https://sustaina-pouch.myshopify.com/), theme details, and access instructions\n3. Create SEO testing configuration files for Sustaina Pouch\n4. Verify access to Sustaina Pouch Shopify admin and theme editor using the preview URL\n5. Within the Fyreley folder, create template subfolders (Homepage, Collection List, Collection, Product, Cart)\n6. Add site-specific README.md with Fyreley URL (Preview: https://fyreley.com/), theme details, and access instructions\n7. Create SEO testing configuration files for Fyreley\n8. Verify access to Fyreley Shopify admin and theme editor using the preview URL\n9. Document specific URLs for both sites in the main credentials template\n10. Test access to both sites and update documentation with any site-specific requirements\n11. Commit changes with descriptive message",
+          "status": "pending",
+          "parentTaskId": 1
+        },
+        {
+          "id": 5,
+          "title": "Implement Secure Credentials Management System",
+          "description": "Set up a secure system for storing and accessing site credentials",
+          "dependencies": [
+            2,
+            3,
+            4
+          ],
+          "details": "1. Research and select a secure credential management approach (options: environment variables, encrypted files, or password manager)\n2. Create a detailed guide for team members on how to securely store and access credentials\n3. Set up the chosen credential management system\n4. Test the credential management system with sample credentials\n5. Update the main README.md with instructions on credential management\n6. Create a template for adding new site credentials in the future\n7. Document the process for rotating or updating credentials\n8. Verify the security of the credential management approach",
+          "status": "pending",
+          "parentTaskId": 1
+        },
+        {
+          "id": 6,
+          "title": "Finalize Project Structure and Create Development Guidelines",
+          "description": "Complete the repository setup with development guidelines and verification of all components",
+          "dependencies": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "details": "1. Create a CONTRIBUTING.md file with guidelines for code style, commit messages, and pull request process\n2. Set up issue and pull request templates in the repository\n3. Verify all site folders have consistent structure and documentation\n4. Create a development workflow document explaining how to work with the repository\n5. Set up a shared SEO testing methodology document with tools and approaches for all sites\n6. Perform a final verification of access to all six Shopify sites\n7. Create a project board or tracking system for ongoing development tasks\n8. Hold a team walkthrough of the repository structure and get feedback for any improvements",
+          "status": "pending",
+          "parentTaskId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Configure SEO Testing Tools",
+      "description": "Install and configure all required SEO testing tools for the project",
+      "status": "pending",
+      "dependencies": [
+        1
+      ],
+      "priority": "high",
+      "details": "1. Install and configure Lighthouse CLI for automated testing\n2. Set up Schema Validator tool integration\n3. Configure Meta Tag Analyzer tool\n4. Install Mobile Responsiveness Testing framework\n5. Set up Page Speed Insights API access\n6. Create a central configuration file for tool settings\n7. Document usage instructions for each tool\n8. Verify tool compatibility across different environments",
+      "testStrategy": "Run a sample test with each tool on a test page to verify proper configuration and output format"
+    },
+    {
+      "id": 3,
+      "title": "Develop Comprehensive SEO Analysis Checklist",
+      "description": "Create detailed SEO testing checklist covering all aspects to be evaluated for each template",
+      "status": "pending",
+      "dependencies": [
+        2
+      ],
+      "priority": "high",
+      "details": "1. Research industry best practices for e-commerce SEO\n2. Create checklist sections for: Meta Tags, Content Structure, Technical SEO, Image Optimization, URL Structure\n3. Define specific test criteria for each checklist item\n4. Assign priority levels to checklist items\n5. Create scoring system for evaluation\n6. Define acceptable thresholds for each criterion\n7. Document remediation suggestions for common issues\n8. Create template-specific variations of the checklist",
+      "testStrategy": "Review checklist with SEO experts, validate against industry standards, and test on a sample page to ensure completeness"
+    },
+    {
+      "id": 4,
+      "title": "Implement Site Access Verification System",
+      "description": "Create a system to verify and maintain access to all target Shopify sites",
+      "status": "pending",
+      "dependencies": [
+        1
+      ],
+      "priority": "high",
+      "details": "1. Create access tracking spreadsheet with site URLs, credentials, and access status\n2. Develop automated script to verify site accessibility\n3. Implement notification system for access issues\n4. Document process for requesting renewed access\n5. Set up secure credential storage\n6. Create backup access methods where possible\n7. Test access to preview and live environments\n8. Document any site-specific access requirements",
+      "testStrategy": "Run automated access checks for all sites, verify notification system works, and confirm secure credential storage"
+    },
+    {
+      "id": 5,
+      "title": "Develop Meta Tags Analysis Module",
+      "description": "Create module to analyze and evaluate meta tags across all template types",
+      "status": "pending",
+      "dependencies": [
+        3,
+        4
+      ],
+      "priority": "medium",
+      "details": "1. Develop scripts to extract and analyze title tags, meta descriptions, OG tags, Twitter cards, and canonical URLs\n2. Create evaluation logic based on SEO best practices\n3. Implement character count and keyword presence checks\n4. Add template-specific evaluation criteria\n5. Create reporting format for meta tag issues\n6. Implement comparison against competitors\n7. Add suggestions for improvement\n8. Create visualization of meta tag effectiveness",
+      "testStrategy": "Test module on sample pages from each site, verify accuracy of extraction and evaluation, compare results with manual analysis"
+    },
+    {
+      "id": 6,
+      "title": "Implement Content Structure Analysis Module",
+      "description": "Create module to analyze content structure including headings, keywords, and internal linking",
+      "status": "pending",
+      "dependencies": [
+        3,
+        4
+      ],
+      "priority": "medium",
+      "details": "1. Develop scripts to analyze heading hierarchy (H1-H6)\n2. Implement content relevance evaluation\n3. Create keyword density and placement analysis\n4. Develop internal linking structure analyzer\n5. Add readability scoring\n6. Implement content length evaluation\n7. Create template-specific content expectations\n8. Add competitive content comparison\n9. Generate improvement recommendations",
+      "testStrategy": "Test on various template types across sites, verify heading structure detection, keyword analysis accuracy, and internal link mapping"
+    },
+    {
+      "id": 7,
+      "title": "Develop Technical SEO Analysis Module",
+      "description": "Create module to analyze technical SEO elements including schema, sitemaps, and robots.txt",
+      "status": "pending",
+      "dependencies": [
+        3,
+        4
+      ],
+      "priority": "medium",
+      "details": "1. Implement schema markup validation and analysis\n2. Create XML sitemap checker\n3. Develop robots.txt analyzer\n4. Implement page load speed testing integration\n5. Add mobile responsiveness evaluation\n6. Create structured data completeness scoring\n7. Implement HTTP header analysis\n8. Add template-specific technical requirements\n9. Generate technical improvement recommendations",
+      "testStrategy": "Validate schema detection against known schemas, verify sitemap analysis with test sitemaps, confirm speed testing accuracy with multiple tools"
+    },
+    {
+      "id": 8,
+      "title": "Implement Image and URL Optimization Analysis",
+      "description": "Create module to analyze image optimization and URL structure",
+      "status": "pending",
+      "dependencies": [
+        3,
+        4
+      ],
+      "priority": "medium",
+      "details": "1. Develop image alt text analyzer\n2. Create image compression checker\n3. Implement lazy loading detection\n4. Add image dimension analyzer\n5. Create URL format and length checker\n6. Implement keyword usage in URL analysis\n7. Develop parameter handling evaluation\n8. Add template-specific image and URL requirements\n9. Generate optimization recommendations",
+      "testStrategy": "Test with various image types and URL structures, verify compression detection accuracy, confirm URL analysis matches best practices"
+    },
+    {
+      "id": 9,
+      "title": "Create Consolidated Reporting System",
+      "description": "Develop system to consolidate analysis results into comprehensive reports",
+      "status": "pending",
+      "dependencies": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "priority": "low",
+      "details": "1. Design report template with sections for each analysis module\n2. Implement scoring system aggregation\n3. Create executive summary generation\n4. Add detailed findings sections\n5. Implement prioritized recommendations\n6. Create visual representations of findings\n7. Add comparative analysis between sites\n8. Implement export functionality (PDF, CSV, HTML)\n9. Add historical comparison capabilities",
+      "testStrategy": "Generate test reports with sample data, verify all sections populate correctly, confirm export functionality works across formats"
+    },
+    {
+      "id": 10,
+      "title": "Implement Automated Testing Workflow",
+      "description": "Create automated workflow to run complete SEO analysis across all sites and templates",
+      "status": "pending",
+      "dependencies": [
+        9
+      ],
+      "priority": "low",
+      "details": "1. Develop main automation script to coordinate all analysis modules\n2. Create scheduling system for regular testing\n3. Implement site and template selection interface\n4. Add progress tracking and logging\n5. Implement error handling and recovery\n6. Create notification system for completed analyses\n7. Add differential analysis to highlight changes\n8. Implement batch processing capabilities\n9. Create documentation for running and maintaining the workflow",
+      "testStrategy": "Run complete workflow on test sites, verify all modules execute in correct sequence, confirm reporting generates properly, test error recovery scenarios"
+    }
+  ],
+  "metadata": {
+    "projectName": "SEO Analysis Project",
+    "totalTasks": 10,
+    "sourceFile": "seo_tasks.json",
+    "generatedAt": "2023-11-15"
+  }
+}
