@@ -17,7 +17,7 @@ alwaysApply: true
   - The CLI provides additional commands like `task-master init` for project setup
 
 - **Development Workflow Process**
-  - Start new projects by running `task-master init` or `node scripts/dev.js parse-prd --input=<prd-file.txt>` to generate initial tasks.json
+  - Start new projects by running `task-master init` or `node scripts/dev.js parse-prd <prd-file.txt>` to generate initial tasks.json
   - Begin coding sessions with `task-master list` to see current tasks, status, and IDs
   - Analyze task complexity with `task-master analyze-complexity --research` before breaking down tasks
   - Select tasks based on dependencies (all marked 'done'), priority level, and ID order
@@ -79,12 +79,12 @@ alwaysApply: true
   ```
 
 - **Command Reference: parse-prd**
-  - Legacy Syntax: `node scripts/dev.js parse-prd --input=<prd-file.txt>`
-  - CLI Syntax: `task-master parse-prd --input=<prd-file.txt>`
+  - Legacy Syntax: `node scripts/dev.js parse-prd <prd-file.txt>`
+  - CLI Syntax: `task-master parse-prd <prd-file.txt>`
   - Description: Parses a PRD document and generates a tasks.json file with structured tasks
   - Parameters: 
-    - `--input=<file>`: Path to the PRD text file (default: sample-prd.txt)
-  - Example: `task-master parse-prd --input=requirements.txt`
+    - `<file>`: Path to the PRD text file (default: sample-prd.txt)
+  - Example: `task-master parse-prd requirements.txt`
   - Notes: Will overwrite existing tasks.json file. Use with caution.
 
 - **Command Reference: update**
